@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     let isSelectingFirstTime = true;
     let startAngle = parseFloat(localStorage.getItem('startAngle'));
     let endAngle = parseFloat(localStorage.getItem('endAngle'));
-    const fixedRadius = 480;
+    const fixedRadius = 280;
     let mappedCoordinates = JSON.parse(localStorage.getItem('mappedCoordinates')) || [];
     const plottedDots = JSON.parse(localStorage.getItem('plottedDots')) || [];
 
     const initClock = (containerId, isHour = true) => {
         const numbersContainer = document.getElementById(containerId);
-        const clockRadius = 500;
-        const numberRadius = 450;
+        const clockRadius = 250;
+        const numberRadius = 225;
     
         numbersContainer.innerHTML = '';
         numbersContainer.replaceWith(numbersContainer.cloneNode(true));
